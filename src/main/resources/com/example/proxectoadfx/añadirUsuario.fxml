@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.proxectoadfx.AñadirUsuarioController"
+            prefHeight="400.0" prefWidth="600.0">
+    <headerText>
+        Añadir Usuario
+    </headerText>
+    <content>
+        <GridPane vgap="10" hgap="10">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <Label text="Nombre usuario" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <TextField fx:id="nombreUsuarioTextField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+            <Label text="Nombre completo" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+            <TextField fx:id="nombreCompletoTextField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+            <Label text="Correo electronico" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+            <TextField fx:id="correoTextField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+            <Label text="Contraseña" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+            <TextField fx:id="contraseñaTextField" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+            <Label text="Fecha de nacimiento" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+            <DatePicker fx:id="datePicker" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+
+            <Button text="Añadir" onAction="#añadirUsuario" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+        </GridPane>
+    </content>
+
+</DialogPane>
